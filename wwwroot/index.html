@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Jonah Duffin- HW1</title>
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <h1 class="header">Jonah Duffin</h1>
+    <div class="content-holder">
+        <div class="content-div">
+            <p></p>
+            <img style="width:100%" src="img/jonah_skiing.jpg" />
+            <p>
+                Welcome to my first homework website! From this class, I'm really hoping to learn how a strongly typed language like C# can be used in web development, and all around I hope to increase the complexity of the web applications that I am
+                able to create. I hope to learn web development skills that would help me keep up in a conversation with a full-time web developer, and produce a modern-looking and efficient website start-to-finish by myself. I feel like I could figure
+                out janky ways to do a lot of things in web development with the skills I already have (I once considered making a web app that used Local Storage to store all the user data because I didn't know how to (or didn't even think to!)
+                connect a database to store all that information). Hopefully I can learn the best ways to do things, to make me a more apt web developer.
+            </p>
+            <h3>These are the top 3 jobs that I am most interested in pursuing after I graduate:</h3>
+            <ol>
+                <li><b>Software Developer- Google</b>. This one is a long shot but dream big, right? It's definitely my number 1 choice.</li>
+                <li><b>Software/Networking Engineer- Microsoft</b>. I think it'd be awesome to work with Azure, and I'd love to live in Seattle.</li>
+                <li><b>Information/Networking Engineer- Goldman Sachs</b>. I'd love to work with financial data, and I'm interning at Zions this summer!</li>
+            </ol>
+            <h3>IS 413 Grading Calculator</h3>
+            <p>Enter each of your grades as a percentage with no % symbol, starting with integers. EX: 85.6 OR 0.03</p>
+            <form onsubmit="return false">
+                <label>Assignments Grade:</label>
+                <input id="assignments" />
+                <br />
+                <label>Group Project Grade:</label>
+                <input id="groupproject" />
+                <br />
+                <label>Quizzes Grade:</label>
+                <input id="quizzes" />
+                <br />
+                <label>Exams Grade:</label>
+                <input id="exams" />
+                <br />
+                <label>INTEX Grade:</label>
+                <input id="intex" />
+                <br />
+                <a class="gradepercentage" id="gradepercentage">0%</a>
+                <br />
+                <input type="submit" value="Calculate Grade" onclick="CalculateGrade()" />
+            </form>
+        </div>
+    </div>
+    <script src="js/calculategrade.js"></script>
+</body>
+</html>
