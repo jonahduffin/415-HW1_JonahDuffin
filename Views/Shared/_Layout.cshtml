@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Jonah Duffin- HW2</title>
+    <link href="~/styles/styles.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <div class="headerbar">
+        <a class="headerlink" asp-controller="First" asp-action="Index">Home</a><a class="headerlink" asp-controller="First" asp-action="GradeCalculator">Grade Calculator</a>
+    </div>
+    <div class="content-holder">
+        <div class="content-div">
+            @RenderBody()
+        </div>
+    </div>
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/calculategrade.js"></script>
+</body>
+</html>
